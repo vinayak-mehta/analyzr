@@ -1,4 +1,5 @@
 # analyzr
+Real-time twitter analytics on your terminal!
 
 ## Demo
 

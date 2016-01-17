@@ -23,5 +23,3 @@ Make sure you start the redis server. You can do this with `systemd` by
 3. Install the dependencies with `pip install -r requirements.txt`.
 
 4. Run using `python analyzr.py`. Press `Ctrl + C` to exit.
-
-5. Profit.

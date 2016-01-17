@@ -92,12 +92,12 @@ while True:
 
         # top 10 words
         wh = ['@', '#']
-        words = [word for word in tokens if word not in stop_words and word[0] not in wh and word[0:4] != 'http']
+        words = [word for word in tokens if word.lower() not in stop_words and word[0] not in wh and word[0:4] != 'http']
         for w in words:
-            if w not in words_d:
-                words_d[w] = 1
+            if w.lower() not in words_d:
+                words_d[w.lower()] = 1
             else:
-                words_d[w] += 1
+                words_d[w.lower()] += 1
 
         top_w = sorted(words_d, key=words_d.get, reverse=True)[:11]
         print("Top 10 words: ", top_w)
